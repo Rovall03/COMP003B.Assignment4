@@ -20,12 +20,12 @@ namespace COMP003B.Assignment4.Controllers
             // Loop through the list of cats and find the one with the matching ID
             Cat catFound = null;
 
-            foreach (Cat c in cats)
+            foreach (Cat x in cats)
             {
                 if
-                    (c.Id == id)
+                    (x.Id == id)
                 {
-                    catFound = c;
+                    catFound = x;
                     break;
                 }
             }
