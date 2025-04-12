@@ -1,7 +1,14 @@
 ﻿
 @model COMP003B.Assignment4.Models.Cat
 
-
+<style>
+    body {
+        background-image: url('https://marketplace.canva.com/EAFhwfMq3ds/1/0/1600w/canva-colorful-cute-cats-illustration-desktop-wallpaper-KBBZLdpjLcM.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
 <img src="@Model.ImageUrl" alt="Image of @Model.Name" style="width:300px; height:auto; border-radius:10px;" />
 <h2>@Model.Name</h2>
 <h3>@Model.Description</h3>
