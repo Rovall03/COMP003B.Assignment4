@@ -1,0 +1,9 @@
+﻿
+@model COMP003B.Assignment4.Models.Cat
+
+
+<img src="@Model.ImageUrl" alt="Image of @Model.Name" style="width:300px; height:auto; border-radius:10px;" />
+<h2>@Model.Name</h2>
+<h3>@Model.Description</h3>
+<a asp-controller="Adoption" asp-action="Apply" asp-route-catId="@Model.Id" class="btn btn-outline-primary">Adopt This Cat</a>
+<a asp-controller="Cat" asp-action="Index" class="btn btn-outline-primary">Back to All Cats</a>
