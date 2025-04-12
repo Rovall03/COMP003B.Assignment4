@@ -1,0 +1,31 @@
+﻿@model COMP003B.Assignment4.Models.AdoptionRequest
+<h2>Cat Adopt</h2>
+
+<form asp-action="Apply" method="post">
+    <input type="hidden" asp-for="CatId" />
+
+    <div>
+        <label for="CatName">Cat's Name You're Interested In:</label>
+        <input type="text" name="CatName" id="CatName" />
+    </div>
+
+    <div>
+        <label for="ApplicantName">Your Name:</label>
+        <input asp-for="ApplicantName" />
+        <span asp-validation-for="ApplicantName"></span>
+    </div>
+
+    <div>
+        <label for="Email">Your Email:</label>
+        <input asp-for="Email" type="email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div>
+        <label for="Phone">Your Phone Number:</label>
+        <input asp-for="Phone" />
+        <span asp-validation-for="Phone"></span>
+    </div>
+
+    <button type="submit">Submit Request</button>
+</form>

@@ -27,6 +27,7 @@
                         </li>
                         
                             <li class="nav-item"><a class="nav-link text-dark" asp-controller="Cat" asp-action="Index">Cats</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-controller="Adoption" asp-action="Apply">Adoption Form</a></li>
 
                       
                     </ul>
@@ -42,6 +43,8 @@
 
     <footer class="border-top footer text-muted">
         <ul>
+            <li><a asp-controller="Adoption" asp-action="Apply" class="btn btn-outline-primary">Adopt a Cat</a></li>
+
             <li><a asp-controller="Cat" asp-action="Index" class="btn btn-outline-primary">View Cats</a></li>
         </ul>
         <div class="container">
